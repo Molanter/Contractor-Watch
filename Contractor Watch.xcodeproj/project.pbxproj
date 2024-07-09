@@ -11,14 +11,22 @@
 		9E5E331B2C3D93A100199047 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E331A2C3D93A100199047 /* ContentView.swift */; };
 		9E5E331D2C3D93A200199047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5E331C2C3D93A200199047 /* Assets.xcassets */; };
 		9E5E33202C3D93A200199047 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5E331F2C3D93A200199047 /* Preview Assets.xcassets */; };
+		9E5E33292C3D946500199047 /* GoogleSheetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5E33282C3D946500199047 /* GoogleSheetsService.swift */; };
+		9E5E332F2C3DBA6100199047 /* Contractor-Watch API.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E5E332E2C3DBA6100199047 /* Contractor-Watch API.plist */; };
+		EE1D8DAF6CD03C617CB6A7F8 /* Pods_Contractor_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26FF7FD807C4F9BE9E48E51 /* Pods_Contractor_Watch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FFC0415D680C691F97AD1E6 /* Pods-Contractor Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contractor Watch.release.xcconfig"; path = "Target Support Files/Pods-Contractor Watch/Pods-Contractor Watch.release.xcconfig"; sourceTree = "<group>"; };
 		9E5E33152C3D93A100199047 /* Contractor Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contractor Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E5E33182C3D93A100199047 /* Contractor_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contractor_WatchApp.swift; sourceTree = "<group>"; };
 		9E5E331A2C3D93A100199047 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9E5E331C2C3D93A200199047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E5E331F2C3D93A200199047 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E5E33282C3D946500199047 /* GoogleSheetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetsService.swift; sourceTree = "<group>"; };
+		9E5E332E2C3DBA6100199047 /* Contractor-Watch API.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Contractor-Watch API.plist"; sourceTree = "<group>"; };
+		DD2BD7C658563AC3900DCA3C /* Pods-Contractor Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contractor Watch.debug.xcconfig"; path = "Target Support Files/Pods-Contractor Watch/Pods-Contractor Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		F26FF7FD807C4F9BE9E48E51 /* Pods_Contractor_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contractor_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1D8DAF6CD03C617CB6A7F8 /* Pods_Contractor_Watch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		495A1AA5E86C4868A2901B44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F26FF7FD807C4F9BE9E48E51 /* Pods_Contractor_Watch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D3430A51B506DE653731BAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD2BD7C658563AC3900DCA3C /* Pods-Contractor Watch.debug.xcconfig */,
+				7FFC0415D680C691F97AD1E6 /* Pods-Contractor Watch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9E5E330C2C3D93A100199047 = {
 			isa = PBXGroup;
 			children = (
 				9E5E33172C3D93A100199047 /* Contractor Watch */,
 				9E5E33162C3D93A100199047 /* Products */,
+				7D3430A51B506DE653731BAF /* Pods */,
+				495A1AA5E86C4868A2901B44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +81,8 @@
 			children = (
 				9E5E33182C3D93A100199047 /* Contractor_WatchApp.swift */,
 				9E5E331A2C3D93A100199047 /* ContentView.swift */,
+				9E5E33282C3D946500199047 /* GoogleSheetsService.swift */,
+				9E5E332E2C3DBA6100199047 /* Contractor-Watch API.plist */,
 				9E5E331C2C3D93A200199047 /* Assets.xcassets */,
 				9E5E331E2C3D93A200199047 /* Preview Content */,
 			);
@@ -74,15 +104,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E5E33232C3D93A200199047 /* Build configuration list for PBXNativeTarget "Contractor Watch" */;
 			buildPhases = (
+				B8E9DD6CF5427F0AAF1474D0 /* [CP] Check Pods Manifest.lock */,
 				9E5E33112C3D93A100199047 /* Sources */,
 				9E5E33122C3D93A100199047 /* Frameworks */,
 				9E5E33132C3D93A100199047 /* Resources */,
+				5DA7CE3008DEBB09012E1A92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Contractor Watch";
+			packageProductDependencies = (
+			);
 			productName = "Contractor Watch";
 			productReference = 9E5E33152C3D93A100199047 /* Contractor Watch.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +145,8 @@
 				Base,
 			);
 			mainGroup = 9E5E330C2C3D93A100199047;
+			packageReferences = (
+			);
 			productRefGroup = 9E5E33162C3D93A100199047 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5E332F2C3DBA6100199047 /* Contractor-Watch API.plist in Resources */,
 				9E5E33202C3D93A200199047 /* Preview Assets.xcassets in Resources */,
 				9E5E331D2C3D93A200199047 /* Assets.xcassets in Resources */,
 			);
@@ -132,11 +169,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DA7CE3008DEBB09012E1A92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Contractor Watch/Pods-Contractor Watch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Contractor Watch/Pods-Contractor Watch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Contractor Watch/Pods-Contractor Watch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E9DD6CF5427F0AAF1474D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Contractor Watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9E5E33112C3D93A100199047 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E5E33292C3D946500199047 /* GoogleSheetsService.swift in Sources */,
 				9E5E331B2C3D93A100199047 /* ContentView.swift in Sources */,
 				9E5E33192C3D93A100199047 /* Contractor_WatchApp.swift in Sources */,
 			);
@@ -266,6 +346,7 @@
 		};
 		9E5E33242C3D93A200199047 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD2BD7C658563AC3900DCA3C /* Pods-Contractor Watch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,6 +355,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Contractor Watch/Preview Content\"";
 				DEVELOPMENT_TEAM = Z2WGFBM7LC;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +377,7 @@
 		};
 		9E5E33252C3D93A200199047 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFC0415D680C691F97AD1E6 /* Pods-Contractor Watch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +386,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Contractor Watch/Preview Content\"";
 				DEVELOPMENT_TEAM = Z2WGFBM7LC;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
